@@ -32,8 +32,4 @@ Você pode alternar entre o modo claro e escuro clicando no ícone correspondent
 
 ## Autor
 
-Este site é mantido por Quantum Technologies.
-
----
-
-*Nota: Este é um exemplo de arquivo Markdown fictício baseado no design do site fornecido. Certifique-se de adaptar conforme necessário para atender aos requisitos específicos do seu projeto.*
+Este site é mantido por Yuri Y. Pecelin.
