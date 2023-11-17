@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Docs</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="./img/atom.png">
+</head>
+<body>
+  <!-- Preload animado de cubo -->
+  <div class="preload-container">
+    <div class="preload-cube">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="top">
+    <span class="brand-icon"><img src="./img/atom.png" alt="Quantum Docs Icon"></span>
+    <span class="brand-text">Quantum Docs</span>
+  </div>
+  <div class="toggle-darkmode" id="toggleDarkMode" onclick="toggleDarkMode()">
+    <img src="./img/moon.svg" alt="Dark Mode Icon">
+  </div>
+
+  <div class="main-content">
+    <div class="article-title">Título da Notícia</div>
+    <div class="article-subtitle">Subtítulo da Notícia</div>
+    <div class="article-body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non sapien vel justo aliquet aliquam.
+        Maecenas vulputate id nibh sit amet convallis. Vestibulum nec velit sed augue interdum varius.
+      </p>
+    </div>
+  </div>
+
+  <script src="javascript/darkmode.js">
+      if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('javascript/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch((error) => {
+        console.log('Erro ao registrar o Service Worker:', error);
+      });
+  }
+  </script>
+</body>
+</html>
